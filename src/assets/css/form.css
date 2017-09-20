@@ -1,0 +1,30 @@
+div.form {
+	background-color: white;
+    width: 680px;
+    height: 450px;
+    margin-left: -110px;
+	margin-top: -35px;
+	color: #898f95;
+	padding: 20px;
+}
+
+.formColumn {
+	float: left;
+	height: 200px
+}
+
+.rightColumn {
+	width: 48%;
+}
+
+.centerColumn {
+	width: 4%
+}
+
+.leftColumn {
+	width: 48%;
+}
+
+.container {
+	width: 100%
+}
