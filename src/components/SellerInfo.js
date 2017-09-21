@@ -2,19 +2,28 @@ import React, { Component } from 'react';
 import '../assets/css/sellerInfo.css';
 
 class SellerInfo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '5Fhantom',
+      address: 'Wallet Address',
+      id: '0x32Be343B94f860124dC4fEe278FDC2C102D88',
+      balance: '$5000'
+    };
+  }
   render() {
     return (
       <div className="sellerInfo">
         <div className="sellerContainer">
           <h2>{'Seller Info'}</h2>
           <hr />
-          {'5Fhantom'}
+          {this.state.name}
           <br />
-          {'Wallet Address'}
+          {this.state.address}
           <br />
-          {'0x32Be343B94f860124dC4fEe278FDC2C102D88'}
+          {this.state.id}
           <br />
-          {'Balance $5000'}
+          {`Balance ${this.state.balance}`}
         </div>
       </div>
     );

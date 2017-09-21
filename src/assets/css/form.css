@@ -1,30 +1,37 @@
 div.form {
-	background-color: white;
-    width: 680px;
-    height: 450px;
-    margin-left: -110px;
-	margin-top: -35px;
-	color: #898f95;
-	padding: 20px;
+  background-color: white;
+  width: 680px;
+  height: 450px;
+  margin-left: -110px;
+  margin-top: -35px;
+  color: #898f95;
+  padding: 20px;
 }
 
 .formColumn {
-	float: left;
-	height: 200px
+  float: left;
+  height: 235px;
 }
 
 .rightColumn {
-	width: 48%;
+  width: 48%;
 }
 
 .centerColumn {
-	width: 4%
+  width: 4%;
 }
 
 .leftColumn {
-	width: 48%;
+  width: 48%;
 }
 
 .container {
-	width: 100%
+  width: 100%;
+}
+
+.submit {
+  margin-top: 59px;
+  width: 180px;
+  height: 40px;
+  float: right;
 }

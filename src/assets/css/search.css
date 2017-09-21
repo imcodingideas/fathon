@@ -1,0 +1,15 @@
+.search {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.searchInput {
+  height: 35px;
+}
+
+.searchBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #57639b;
+  color: #ffffff;
+}

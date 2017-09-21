@@ -1,26 +1,27 @@
-.homeTable {
+.clientTable {
   height: 480px;
   width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.tableColumnFirst {
+.tableColumnFirstClient {
   width: 15%;
   float: left;
   text-align: center;
   padding-top: 13px;
 }
 
-.tableColumn {
+.tableColumnClient {
   width: 13%;
   float: left;
   text-align: center;
   padding-top: 13px;
 }
 
-.tableHeader {
+.tableHeaderClient {
   height: 45px;
+  background-color: #b6b6b6;
   text-align: center;
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
@@ -28,13 +29,26 @@
   border: 0px solid #000000;
 }
 
-.itemHolder {
+.itemHolderClient {
   background-color: #ffffff;
   width: 100%;
-  height: 45px;
-  margin-top: 15px;
+  height: 100px;
+  margin-top: 10px;
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   border: 0px solid #000000;
+}
+
+.claim {
+  float: right;
+  margin-right: 35px;
+  height: 47px;
+  margin-top: 20px;
+}
+
+.claimBtn {
+  height: 40px;
+  background-color: #56ba8b;
+  color: #ffffff;
 }
