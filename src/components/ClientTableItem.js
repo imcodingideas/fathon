@@ -1,22 +1,51 @@
 import React, { Component } from 'react';
-//import '../assets/css/homeTable.css';
+// import '../assets/css/homeTable.css';
 
 class ClientTableItem extends Component {
   render() {
+    const {
+      id,
+      creationDate,
+      endDate,
+      seller,
+      buyer,
+      premium,
+      status
+    } = this.props;
     return (
       <div className="itemHolderClient">
-        <div className="tableColumnFirst">
-          <a href="#">{this.props.id}</a>
+        <div className="row">
+          <div className="col s12 grayText">
+            <div className="row">
+              <div className="col s11 push-s1">
+                <div className="tColumnFirst valign-wrapper center-align">
+                  <a href="#">{id}</a>
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {creationDate}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {endDate}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {seller}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {buyer}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {premium}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {status}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="tableColumn">{this.props.creationDate}</div>
-        <div className="tableColumn">{this.props.endDate}</div>
-        <div className="tableColumn">{this.props.seller}</div>
-        <div className="tableColumn">{this.props.buyer}</div>
-        <div className="tableColumn">{this.props.premium}</div>
-        <div className="tableColumn">{this.props.status}</div>
 
-        <div className="claim">
-          <button className="claimBtn">Claim</button>
+        <div className="row">
+          <button className="col s1 push-s10 btn teal accent-4">Claim</button>
         </div>
       </div>
     );

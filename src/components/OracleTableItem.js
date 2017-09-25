@@ -1,26 +1,56 @@
 import React, { Component } from 'react';
-//import '../assets/css/homeTable.css';
+// import '../assets/css/homeTable.css';
 
 class OracleTableItem extends Component {
   render() {
+    const {
+      id,
+      creationDate,
+      endDate,
+      seller,
+      buyer,
+      premium,
+      status
+    } = this.props;
     return (
       <div className="itemHolderOracle">
-        <div className="tableColumnFirst">
-          <a href="#">{this.props.id}</a>
+        <div className="row">
+          <div className="col s12 grayText">
+            <div className="row">
+              <div className="col s11 push-s1">
+                <div className="tColumnFirst isFirstItem valign-wrapper center-align">
+                  {id}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {creationDate}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {endDate}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {seller}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {buyer}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {premium}
+                </div>
+                <div className="tColumn valign-wrapper center-align">
+                  {status}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="tableColumn">{this.props.creationDate}</div>
-        <div className="tableColumn">{this.props.endDate}</div>
-        <div className="tableColumn">{this.props.seller}</div>
-        <div className="tableColumn">{this.props.buyer}</div>
-        <div className="tableColumn">{this.props.premium}</div>
-        <div className="tableColumn">{this.props.status}</div>
 
-        <div className="temperature">
-          <input
-            className="temperatureInput"
-            placeholder="Enter temperature..."
-          />
-          <button className="temperatureBtn">Submit</button>
+        <div className="row">
+          <div className="col s4 push-s8">
+            <input className="col s8" placeholder="Enter temperature..." />
+            <button className="col s4 btn  indigo darken-1 temperatureBtn">
+              Submit
+            </button>
+          </div>
         </div>
       </div>
     );

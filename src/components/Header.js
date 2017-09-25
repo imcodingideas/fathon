@@ -12,13 +12,23 @@ class Header extends Component {
         </div>
         <div className="menu">
           <ul>
-            <li>
+            <li
+              className={`${this.props.selected === 'home' ? 'selected' : ''}`}
+            >
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li
+              className={`${this.props.selected === 'oracle'
+                ? 'selected'
+                : ''}`}
+            >
               <Link to="/oracle">Oracle</Link>
             </li>
-            <li>
+            <li
+              className={`${this.props.selected === 'client'
+                ? 'selected'
+                : ''}`}
+            >
               <Link to="/client">Client</Link>
             </li>
           </ul>

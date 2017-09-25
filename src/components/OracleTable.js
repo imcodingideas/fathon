@@ -10,26 +10,53 @@ class OracleTable extends Component {
   render() {
     return (
       <div className="oracleTable">
-        <div className="tableHeaderOracle">
-          <div className="tableColumnFirstOracle">Contact Address/ID</div>
-          <div className="tableColumnOracle">Creation Date</div>
-          <div className="tableColumnOracle">End Date</div>
-          <div className="tableColumnOracle">Seller</div>
-          <div className="tableColumnOracle">Buyer</div>
-          <div className="tableColumnOracle">Premium</div>
-          <div className="tableColumnOracle">Status</div>
+        <div className="row">
+          <div className="col s12">
+            <div className="tableHeaderOracle">
+              <div className="row">
+                <div className="col s11 push-s1">
+                  <div className="tColumnFirst valign-wrapper center-align">
+                    Contact Address/ID
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    Creation Date
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    End Date
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    Seller
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    Buyer
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    Premium
+                  </div>
+                  <div className="tColumn valign-wrapper center-align">
+                    Status
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {mockData.map(data => (
-          <OracleTableItem
-            id={data.id}
-            creationDate={data.creationDate}
-            endDate={data.endDate}
-            seller={data.seller}
-            buyer={data.buyer}
-            premium={data.premium}
-            status={data.status}
-          />
-        ))}
+
+        <div className="row">
+          <div className="col s12">
+            {mockData.map(data => (
+              <OracleTableItem
+                id={data.id}
+                creationDate={data.creationDate}
+                endDate={data.endDate}
+                seller={data.seller}
+                buyer={data.buyer}
+                premium={data.premium}
+                status={data.status}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     );
   }

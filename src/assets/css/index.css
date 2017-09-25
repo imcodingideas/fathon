@@ -36,6 +36,30 @@ body {
   height: 330px;
 }
 
+.tColumnFirst {
+  width: 17%;
+  padding-top: 13px;
+  float: left;
+}
+
+.tColumn {
+  width: 13%;
+  padding-top: 13px;
+  float: left;
+}
+
 .grayColor {
   color: #898f95;
+}
+
+.isFirstItem {
+  color: #1e8bc3;
+}
+
+.grayText {
+  color: #788995;
+}
+
+.whiteText {
+  color: #ffffff;
 }

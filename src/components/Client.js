@@ -1,24 +1,29 @@
-import React, { Component } from 'react';
-import '../assets/css/home.css';
-import Header from './Header';
-import SellerInfo from './SellerInfo';
-import ClientTable from './ClientTable';
+import React, { Component } from 'react'
+import '../assets/css/home.css'
+import Header from './Header'
+import SellerInfo from './SellerInfo'
+import ClientTable from './ClientTable'
 
 class Client extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <Header />
-        <div className="columnContainerClient">
-          <div className="column">
+      <div className='App'>
+        <Header selected='client' />
+        <div className="row">
+          <div className="col s6">
             <SellerInfo />
           </div>
-          <div className="column" />
+          <div className="col s6"></div>
         </div>
-        <ClientTable />
+
+        <div className="row">
+          <div className="col s12">
+            <ClientTable />
+          </div>
+        </div>
       </div>
-    );
+    )
   }
 }
 
-export default Client;
+export default Client

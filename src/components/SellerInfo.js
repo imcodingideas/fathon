@@ -13,17 +13,26 @@ class SellerInfo extends Component {
   }
   render() {
     return (
-      <div className="sellerInfo">
-        <div className="sellerContainer">
-          <h2>{'Seller Info'}</h2>
-          <hr />
-          {this.state.name}
-          <br />
-          {this.state.address}
-          <br />
-          {this.state.id}
-          <br />
-          {`Balance ${this.state.balance}`}
+      <div className="row ">
+        <div className="sellerInfo col s8 push-s2 card-panel white">
+          <div className="row">
+            <div className="col s10 push-s1">
+              <h5>{'Seller Info'}</h5>
+              <br />
+              <hr />
+              <br />
+              {this.state.name}
+              <br />
+              <br />
+              {this.state.address}
+              <br />
+              <br />
+              {this.state.id}
+              <br />
+              <br />
+              {`Balance ${this.state.balance}`}
+            </div>
+          </div>
         </div>
       </div>
     );

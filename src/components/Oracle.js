@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../assets/css/home.css';
+//import '../assets/css/home.css'
 import Header from './Header';
 import SellerInfo from './SellerInfo';
 import OracleTable from './OracleTable';
@@ -10,17 +10,19 @@ class Oracle extends Component {
     return (
       <div className="App">
         <div>
-          <Header />
-          <div className="columnContainerOracle">
-            <div className="columnOracle">
+          <Header selected="oracle" />
+          <div className="row">
+            <div className="col s6">
               <SellerInfo />
             </div>
-            <div className="columnOracle">
+            <div className="col s6">
               <Search />
             </div>
           </div>
         </div>
-        <OracleTable />
+        <div className="row">
+          <OracleTable />
+        </div>
       </div>
     );
   }

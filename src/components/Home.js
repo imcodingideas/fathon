@@ -9,18 +9,20 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <Header />
-          <div className="columnContainer">
-            <div className="column">
+        <Header selected={'home'} />
+        <div className="container">
+          <div className="row">
+            <div className="col s6">
               <SellerInfo />
             </div>
-            <div className="column">
+            <div className="col s6">
               <Form />
             </div>
           </div>
+          <div className="row">
+            <HomeTable />
+          </div>
         </div>
-        <HomeTable />
       </div>
     );
   }
