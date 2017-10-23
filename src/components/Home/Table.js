@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../assets/css/homeTable.css';
-import Header from './Header';
-import SellerInfo from './SellerInfo';
-import Form from './Form';
-import HomeTableItem from './HomeTableItem';
-import mockData from './mockData';
+import '../../assets/css/homeTable.css';
+import Header from '../Header';
+import SellerInfo from '../SellerInfo';
+import Form from '../Form';
+import TableItem from './TableItem';
+import mockData from '../mockData';
 
 class HomeTable extends Component {
   render() {
@@ -14,10 +14,10 @@ class HomeTable extends Component {
           <div className="col s12 grayText">
             <div className="row">
               <div className="col s11 push-s1">
-                <div className="tColumnFirst valign-wrapper center-align ">
+                <div className="tColumnFirst valign-wrapper center-align">
                   Contact Address/ID
                 </div>
-                <div className="tColumn valign-wrapper center-align ">
+                <div className="tColumn valign-wrapper center-align">
                   Creation Date
                 </div>
                 <div className="tColumn valign-wrapper center-align">
@@ -40,7 +40,7 @@ class HomeTable extends Component {
 
         <div className="row">
           {mockData.map(data => (
-            <HomeTableItem
+            <TableItem
               id={data.id}
               creationDate={data.creationDate}
               endDate={data.endDate}

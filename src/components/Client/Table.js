@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../assets/css/clientTable.css';
-import Header from './Header';
-import SellerInfo from './SellerInfo';
-import Form from './Form';
-import ClientTableItem from './ClientTableItem';
-import mockData from './mockData';
+import '../../assets/css/clientTable.css';
+import Header from '../Header';
+import SellerInfo from '../SellerInfo';
+import Form from '../Form';
+import TableItem from '../Client/TableItem';
+import mockData from '../mockData';
 
 class ClientTable extends Component {
   render() {
@@ -45,7 +45,7 @@ class ClientTable extends Component {
         <div className="row">
           <div className="col s12">
             {mockData.map(data => (
-              <ClientTableItem
+              <TableItem
                 id={data.id}
                 creationDate={data.creationDate}
                 endDate={data.endDate}

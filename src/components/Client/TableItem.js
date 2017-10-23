@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import '../assets/css/homeTable.css';
 
-class ClientTableItem extends Component {
+class TableItem extends Component {
   render() {
     const {
       id,
@@ -52,4 +52,4 @@ class ClientTableItem extends Component {
   }
 }
 
-export default ClientTableItem;
+export default TableItem;

@@ -47,7 +47,7 @@ class OracleTableItem extends Component {
         <div className="row">
           <div className="col s4 push-s8">
             <input className="col s8" placeholder="Enter temperature..." />
-            <button className="col s4 btn  indigo darken-1 temperatureBtn">
+            <button className="col s4 btn indigo darken-1 temperatureBtn">
               Submit
             </button>
           </div>

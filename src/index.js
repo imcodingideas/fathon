@@ -5,9 +5,9 @@ import registerServiceWorker from './registerServiceWorker';
 import 'normalize.css';
 import { Router, Route, hashHistory } from 'react-router';
 
-import Home from './components/Home';
-import Client from './components/Client';
-import Oracle from './components/Oracle';
+import Home from './components/Home/Index';
+import Client from './components/Client/Index';
+import Oracle from './components/Oracle/Index';
 
 ReactDOM.render(
   <Router history={hashHistory}>

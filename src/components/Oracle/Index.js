@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 //import '../assets/css/home.css'
-import Header from './Header';
-import SellerInfo from './SellerInfo';
-import OracleTable from './OracleTable';
-import Search from './Search';
+import Header from '../Header';
+import SellerInfo from '../SellerInfo';
+import Table from './Table';
+import Search from '../Search';
 
 class Oracle extends Component {
   render() {
@@ -21,7 +21,7 @@ class Oracle extends Component {
           </div>
         </div>
         <div className="row">
-          <OracleTable />
+          <Table />
         </div>
       </div>
     );

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import '../assets/css/oracleTable.css';
-import Header from './Header';
-import SellerInfo from './SellerInfo';
-import Form from './Form';
-import OracleTableItem from './OracleTableItem';
-import mockData from './mockData';
+import '../../assets/css/oracleTable.css';
+import Header from '../Header';
+import SellerInfo from '../SellerInfo';
+import Form from '../Form';
+import TableItem from './TableItem';
+import mockData from '../mockData';
 
 class OracleTable extends Component {
   render() {
@@ -45,7 +45,7 @@ class OracleTable extends Component {
         <div className="row">
           <div className="col s12">
             {mockData.map(data => (
-              <OracleTableItem
+              <TableItem
                 id={data.id}
                 creationDate={data.creationDate}
                 endDate={data.endDate}
