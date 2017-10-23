@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Table.css';
-import Header from '../Header';
-import SellerInfo from '../SellerInfo';
-import Form from '../Form';
 import TableItem from '../Client/TableItem';
 import mockData from '../mockData';
 

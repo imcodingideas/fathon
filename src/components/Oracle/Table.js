@@ -1,8 +1,5 @@
 import React from 'react';
 import './table.css';
-import Header from '../Header';
-import SellerInfo from '../SellerInfo';
-import Form from '../Form';
 import TableItem from './TableItem';
 import mockData from '../mockData';
 
